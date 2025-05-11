@@ -1,4 +1,4 @@
-Thoughtful.ai Package Sorter:
+# Thoughtful.ai Package Sorter:
 
 A Python function used to sort packages in Thoughtful.ai's robotic automation factory based on size and weight criteria.
 
@@ -26,3 +26,19 @@ The sorting is implemented in the function:
 ```python
 def sort(width, height, length, mass):
     # Returns: "STANDARD", "SPECIAL", or "REJECTED"
+```
+
+## How to run 
+1. Save the code in a file named ***main.py***
+2. Run the script using Python:
+
+```bash
+  python main.py
+```
+
+```python
+sort(100,100,100, 10) # "STANDARD"
+sort(160,50,50, 10) # "SPECIAL"
+sort(50,50,50, 25) # "SPECIAL"
+sort(200,200,200, 35) # "REJECTED"
+  ```
